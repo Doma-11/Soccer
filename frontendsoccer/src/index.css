@@ -1,0 +1,267 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding:0px;
+
+}
+p{
+  color:white;
+}
+h3{
+  color:white;
+}
+.bigBrotherDiv{
+  
+  background-size: "100% 100%";
+  width: "100vw";
+  height:"100vh";
+  background-attachment: "fixed";
+} 
+
+.defaultLeague{
+  background-image : url("./img/europePES-min.png");
+  
+  background-size: "100% 100%";
+  width: "100vw";
+  height:"100vh";
+  background-attachment: "fixed";
+}
+
+.leagueSpain{
+  background-image : url("./img/Spain-min-compressed.jpg");
+}
+.leagueItaly{
+  background-image : url("./img/Italy-min-compressed.jpg");
+}
+
+.leagueGermany{
+  background-image : url("./img/Germany-min-compressed.jpg");
+}
+.leagueCroatia{
+  background-image : url("./img/Croatia-min-compressed.jpg");
+}
+.leagueFrance{
+  background-image : url("./img/France-min-compressed.jpg");
+}
+.leagueEngland{
+  background-image : url("./img/GreatBritain-min-compressed.jpg");
+}
+
+.dashboardLeague{
+  background-image : url("./img/CroatiaSmall-min.png");
+ 
+  
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.mainMenu{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  
+}
+
+.leaguesDiv{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  width:100%;
+  margin-top:5rem;
+  height:10rem;
+  
+}
+
+.mainDiv{
+  display:flex;
+  flex-direction: row;
+  width:100%;  
+  
+}
+
+
+
+
+.leagueContainer{
+  margin-top: 22rem;
+  
+}
+
+.league{
+  padding:1rem;
+  border-radius: 50%;
+  width:9rem;
+  height:7rem;
+  position: relative;
+  overflow: hidden;
+  transition: all transform 5s ease;
+  margin-top: 0.5rem;
+  cursor:pointer;
+  
+  
+}
+
+.league:hover{
+
+  cursor:pointer;
+  box-shadow: 0 0 10px #00bfff, 0 0 10px #00bfff, 0 0 10px #00bfff;
+  transform: scale(1.2);
+  animation:enlarge 0.3s forwards;
+
+}
+
+@keyframes enlarge{
+  0%{
+    transform: scale(1)
+  }
+  100%{
+    transform: scale(1.2)
+  }
+}
+
+
+.selected{
+  background-color:#248162;
+}
+
+.team{
+  
+  border-radius: 0.5rem;
+  margin-left:2rem;
+  margin-top:1rem;
+  color:white;
+  cursor:pointer;
+
+
+}
+
+.selected-team{
+  
+  cursor:pointer;
+
+}
+.imgTeams{
+  height:3rem;
+  width:3rem;
+}
+.imgFlag{
+  height:2rem;
+  width:2rem;
+}
+.imgStadium{
+  height:20rem;
+  border-radius:2rem;
+}
+
+.teamsDiv{
+  display:flex;
+  flex-direction: row;
+  width:50%;
+  
+}
+
+
+.teamDetails{
+  display:flex;
+  flex-direction: column;
+  padding:1rem;
+}
+
+
+.tableRow{
+  
+  border:1px solid grey;
+  display:flex;
+  justify-content: space-between;
+  
+  border-radius: 5px;
+  padding:1px;
+  height:40px;
+  margin:2px;
+  display:flex;
+  gap:2rem;
+}
+
+.tableRowCurrent{
+  background-color: #a8abe0;
+  border:1px solid grey;
+  display:flex;
+  justify-content: space-between;
+  
+  border-radius: 5px;
+  padding:1px;
+  height:40px;
+  margin:2px;
+  display:flex;
+  gap:2rem;
+}
+
+.tableRow p,.tableRowCurrent p{
+  flex:0 1 auto;
+  width:20px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
